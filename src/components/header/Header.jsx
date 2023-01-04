@@ -5,7 +5,30 @@ import {CgShoppingBag} from 'react-icons/cg'
 
 function Header() {
   return (
-    <p>header</p>
+    <div className={css.container}>
+      <div className={css.logo}>
+        <img src={Logo} alt="E-commerce logo" />
+      </div>
+
+      <div className={css.right}>
+        <div className={css.menu}>
+          <ul className={css.menu}>
+            <li>Collections</li>
+            <li>Brands</li>
+            <li>Sales</li>
+            <li>ENG</li>
+          </ul>
+        </div>
+
+        <input 
+          type="text" 
+          className={css.search}
+          placeholder="Search"
+        />
+
+        <CgShoppingBag className={css.cart} />
+      </div>
+    </div>
   )
 }
 
