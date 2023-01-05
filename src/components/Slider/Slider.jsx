@@ -24,7 +24,7 @@ function Slider() {
         loop={true}
       >
         {SliderProducts.map((item, index) => (
-          <SwiperSlide>
+          <SwiperSlide key={index}>
             <div className="left-s">
               <div className="name">
                 <span>{item.name}</span>
