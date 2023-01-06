@@ -20,8 +20,8 @@ function Header() {
           </ul>
         </div>
 
-        <input 
-          type="text" 
+        <input
+          type="text"
           className={css.search}
           placeholder="Search"
         />
